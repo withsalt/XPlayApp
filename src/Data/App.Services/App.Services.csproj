@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.Data.Entity\App.Data.Entity.csproj" />
+    <ProjectReference Include="..\App.Data.Model\App.Data.Model.csproj" />
+    <ProjectReference Include="..\App.IRepository\App.IRepository.csproj" />
+    <ProjectReference Include="..\App.IServices\App.IServices.csproj" />
+    <ProjectReference Include="..\App.Repository\App.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

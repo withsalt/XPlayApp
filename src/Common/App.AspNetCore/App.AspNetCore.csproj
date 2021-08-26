@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.9" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\App.IRepository\App.IRepository.csproj" />
+    <ProjectReference Include="..\..\Data\App.IServices\App.IServices.csproj" />
+    <ProjectReference Include="..\..\Data\App.Repository\App.Repository.csproj" />
+    <ProjectReference Include="..\..\Data\App.Services\App.Services.csproj" />
+    <ProjectReference Include="..\App.AutoMapper\App.AutoMapper.csproj" />
+  </ItemGroup>
+
+</Project>

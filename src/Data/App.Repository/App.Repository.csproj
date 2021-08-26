@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.2.62" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\App.Config\App.Config.csproj" />
+    <ProjectReference Include="..\App.Data.Entity\App.Data.Entity.csproj" />
+    <ProjectReference Include="..\App.Data.Model\App.Data.Model.csproj" />
+    <ProjectReference Include="..\App.IRepository\App.IRepository.csproj" />
+    <ProjectReference Include="..\App.IServices\App.IServices.csproj" />
+  </ItemGroup>
+
+</Project>
